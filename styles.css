@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Acme";
+    src: url("assets/fonts/Acme-Regular.ttf") format("truetype");
+  }
+
+body {
+    background-color: #2A363B;
+    background-size: cover;
+    background-position: center;
+}
+
+#poster {
+    width: 600;
+    height: 400;
+    background-color: #99B898;
+    border: 1px #2A363B solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35px;
+  }
+#poster .Heading{
+    text-align: center;
+    color:  #2A363B ;
+    font-family: "Acme", sans-serif;
+    font-size: 40;
+}
+  
