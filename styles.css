@@ -2,6 +2,18 @@
     font-family: "Acme";
     src: url("assets/fonts/Acme-Regular.ttf") format("truetype");
   }
+@font-face {
+  font-family: "Quote";
+  src: url("./assets/fonts/CursiveSerif.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SugarSnow";
+  src: url("./assets/fonts/SugarSnow.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Typewriter";
+  src: url("./assets/fonts/Justink.ttf") format("truetype");
+}
 
 body {
     background-color: #2A363B;
@@ -10,8 +22,8 @@ body {
 }
 
 #poster {
-    width: 600;
-    height: 400;
+    width: 800;
+    height: 600;
     background-color: #99B898;
     border: 1px #2A363B solid;
     position: absolute;
@@ -19,11 +31,79 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 #poster .Heading{
-    text-align: center;
-    color:  #2A363B ;
-    font-family: "Acme", sans-serif;
-    font-size: 40;
+  margin: auto;
+  height: 5%;
+  text-align: center;
+  color:  #2A363B ;
+  font-family: "SugarSnow", sans-serif;
+  font-size: 50px;
 }
-  
+#poster .Heading p{
+  margin: auto;
+  padding-top: 25px;
+}
+
+
+#mainposter{
+  width: auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#mainposter .up{
+  width: auto;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainposter .up h1{
+  color:  #2A363B ;
+  font-family: "Typewriter", serif;
+  padding-top: 20;
+  font-size: 28px;
+  text-align: center;
+}
+#mainposter .down{
+  width: auto;
+  height: 80%;
+  border: white 1px solid;
+}
+
+
+#quote{
+  width: auto;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+#quote .text{
+  width: 75%;
+  text-align: center;
+  color:  #2A363B;
+  font-family: "Quote", sans-serif;
+}
+#quote .text p{
+  margin: auto;
+  padding-top: 35px;
+  font-size: 28px;
+}
+#quote .text #name{
+  font-size: 15px;
+  padding-left: 350px;
+  padding-top: 0;
+}
+#quote .image{
+  padding-left: 15px;
+  width: 25%;
+}
+#quote .image img{
+  height: 100%;
+}
