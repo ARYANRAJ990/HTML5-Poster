@@ -19,6 +19,7 @@ body {
     background-color: #2A363B;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 #poster {
@@ -91,9 +92,8 @@ body {
 #mainposter .down .Lft .L .hidebox{
   width: 400px;
   height: 400px;
-  border: white 1px solid;
   background-color: #2A363B;
-  left: -410;
+  left: -400;
   bottom: 300;
   position: absolute;
 }
