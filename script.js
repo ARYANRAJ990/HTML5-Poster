@@ -12,20 +12,20 @@ var Garbage1 = document.getElementById("Garbage1");
 
 function updateValues(t1l, t1t, t1r, t1o, t2l, t2t, t2r, t2o, g1l, g1t, g1r, g1o){
     //trashcanlid
-    trashcan1.style.left = t1l;
-    trashcan1.style.top =  t1t;
+    trashcan1.style.left = t1l+12;
+    trashcan1.style.top =  t1t-75;
     trashcan1.style.transform = "rotate(" + t1r + "deg)";
     trashcan1.style.transformOrigin = "\""+t1o+"\"";
 
     //trashcanbody
-    trashcan2.style.left = t2l;
-    trashcan2.style.top =  t2t;
+    trashcan2.style.left = t2l+12;
+    trashcan2.style.top =  t2t-75;
     trashcan2.style.transform = "rotate(" + t2r + "deg)";
     trashcan2.style.transformOrigin = t2o;
 
     //garbage
-    Garbage1.style.left = g1l;
-    Garbage1.style.top =  g1t;
+    Garbage1.style.left = g1l+12;
+    Garbage1.style.top =  g1t-75;
     Garbage1.style.transform = "rotate(" + g1r + "deg)";
     Garbage1.style.transformOrigin = g1o;
 }
@@ -47,7 +47,6 @@ function update(){
         if (frameCount >= 100){
             frameCount = 0;
         }
-    console.log(frameCount);
     }
     if (frameCount >= 0 && frameCount <= 15){
         updateValues(0, 150, frameCount*4, "85%,50%", 0, 150, 0, "80% 100%", (-200+(pvalue*20)), (0+(pvalue*20)), -45, "50% 50%");
